@@ -16,7 +16,7 @@ html {
     padding: 0.6rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    position: static;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%; 
@@ -125,12 +125,12 @@ html {
 }
 
 .painel1 {
-    background: url('../src/img/cj3.png') no-repeat;
+    background: url('../src/img/cj3.1.png') no-repeat;
     position: relative;
     background-size: cover;
     background-position: center;
     padding: 4% 3%;
-    min-height: 60vh;
+    min-height: 68vh;
     max-width: 100%;
 }
 
