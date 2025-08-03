@@ -82,7 +82,6 @@ html {
 }
 
 
-
 .title {
     width: max-content;
     color: #FCFCFC;
@@ -126,11 +125,10 @@ html {
 
 .painel1 {
     background: url('../src/img/cj3.1.png') no-repeat;
-    position: relative;
     background-size: cover;
     background-position: center;
     padding: 4% 3%;
-    min-height: 68vh;
+    height: 70svh;
     max-width: 100%;
 }
 
@@ -145,11 +143,12 @@ html {
 
 .album {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .painel3 {
-    background-color: #1C1C1C;
+    background-color: #2b2a2a;
     background-size: center;
     background-position: center;
     padding: 4% 3%;
@@ -164,7 +163,6 @@ html {
     gap: 2.5rem 3rem;
     max-height: 100%;
 }
-
 
 
 .footer {
@@ -194,4 +192,41 @@ html {
     flex-direction: column;
     gap: 4px;
     padding-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .painel1{
+        width: 100%;
+        min-height: 50vh;
+        background-position: 55%;
+        background-size: cover;
+    }
+
+    .album{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .album iframe{
+        margin-bottom: 4%;
+        width: 100%;
+    }
+
+    .singles-eps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    
+    .singles-eps iframe {
+        width: 95%;
+        max-width: 400px;
+        height: 160px;
+        margin: 0;
+    }
 }
